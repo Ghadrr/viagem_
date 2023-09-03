@@ -1,0 +1,476 @@
+*{
+    margin:0 ;
+    padding: 1px;
+    box-sizing: border-box;
+    text-decoration: none;  
+}
+.container{
+    /* background-color:aquamarine; */
+    display: grid;
+    height: 1366px;
+    grid-template-columns: 100%;
+    grid-template-rows: 30fr 60fr 10fr;
+    gap: 9px;
+    grid-template-areas: 
+    "header" 
+    "main"
+    "footer"
+    }
+
+    header{
+        grid-area: header;
+        background: url(imgs/imagens/london.jpg);
+        /* align-items: center; */
+        background: url(imgs/imagens/london.jpg);
+        height: 800px;
+        object-fit: cover;
+        background-repeat: no-repeat;
+        background-size: 100% 800px;
+        background-position: center;
+        position: relative;
+
+
+    }
+    .bk{
+        background-color: white;
+        width: 100% ;
+        height: 70px;
+        display: flex;
+        gap: 92%;
+    }
+    .search{
+        display: flex;
+        align-items: center;
+    }
+    .logo{
+        align-items: center;
+        display: flex;
+        color: red;
+    }
+    .box{
+        height: 35%;
+        width: 50% ;
+        margin:130px;
+        margin-top: 15%;
+        margin-left: 25%;
+        align-items: center;
+    }
+    .head{
+        background-color: black;
+        height: 15%;
+        display: flex;
+        justify-content: space-between   ;
+        align-items: center;
+    
+    }
+    .colum{
+        background-color: black;
+        color: white;
+        width: 100%;
+        height: 100%;
+        padding: 5px;
+        gap: 10%;
+        display: flex;
+        justify-content: space-evenly;
+        text-align: center;
+        align-items: center;
+        cursor: pointer;
+
+    }
+    .colum:hover{
+        background-color: orangered;
+    }
+    .titulo{
+        /* background-color: blueviolet; */
+        height: 25%;
+        align-items: center;
+        padding: 10px
+    }
+    
+    .in{
+        height: 35%;
+        display: flex;
+        padding: 2.5%;
+        gap: 5%;
+        align-items: center;
+            /* background-color: aquamarine; */
+    
+    
+    }
+    .todo{
+        background-color:#f1f1f1;
+        height: 80%;
+        padding: 10px;
+        align-items: center;
+    }
+    .btn{
+        height: 30%;
+        padding: 20px;
+    }
+
+
+    main{
+        grid-area: main;
+        height: 2000px;
+        background-color: #f1f1f1;
+        color: white;
+        margin-top:9px;
+        display: grid;
+        justify-content: center;
+        align-items: center;
+        justify-items: center;
+        grid-template-columns: 10fr ;
+        grid-template-rows: 2.5fr 2.5fr 2.5fr 2.5fr;
+        gap: 10px;
+        grid-template-areas: 
+       "sec1" 
+       "sec2" 
+       "sec3" 
+       "sec4" 
+
+    }
+
+    .sec1{
+        /* background-color: aqua; */
+        grid-area: sec1;
+        width: 80%;        
+        height: 500px;
+        display: grid;
+        grid-template-rows: 1.5fr 8.5fr;
+        grid-template-areas:
+        "sec_title"
+        "box_img" 
+        ;
+    }
+
+    .box_img{
+        grid-area: box_img;
+        display: grid;
+        grid-template-columns: 2.5fr 2.5fr 2.5fr 2.5fr ;
+        grid-template-rows: 2.5fr 2.5fr 2.5fr 2.5r;
+        gap: 10px;
+        grid-template-areas: 
+        "grande grande um dois" 
+        "grande grande tres quatro"
+    }
+
+    .sec_title{
+       background-color: white;
+        margin-top: 10px;
+        color: black;
+        height: 80px;
+        width: 100;
+    }
+
+    .grande{
+        grid-area: grande;
+        background: url(imgs/imagens/cinqueterre.jpg);
+        background-color: green;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        background-position: center;
+        position: relative;
+    }
+    .city_cinque{
+        margin-top: 79%;
+    }
+
+    .um{
+        grid-area: um;
+        background-color: green;
+        background: url(imgs/imagens/newyork.jpg);
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        background-position: center;
+        position: relative;
+ 
+    }
+
+    .dois{
+    grid-area: dois;
+    background-color: green;
+    background: url(imgs/imagens/sanfran.jpg);
+    object-fit: cover;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-position: center;
+    position: relative;
+ 
+    }
+    .tres{
+        grid-area: tres;
+        background-color: green;
+        background: url(imgs/imagens/pisa.jpg);
+        object-fit: cover;
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        background-position: center;
+        position: relative;
+
+    }
+
+    .quatro{
+        grid-area: quatro;
+        background-color: green;
+        background: url(imgs/imagens/paris.jpg);
+        object-fit: cover;
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        background-position: center;
+        position: relative;
+
+    }
+
+    .sec2{
+        grid-area: sec2;
+        /* background-color: blueviolet; */
+        width: 80%;        
+        height: 600px;
+        margin-top: 90px;
+        display: grid;
+        align-items: center;
+        justify-items: center;
+
+        /* align-items: center;
+        justify-items: center;
+        justify-content: center; */
+        grid-template-rows: 1fr 9fr;
+        /* grid-template-columns: 10fr; */
+        grid-template-areas:
+        "sec_title2"
+        "box_nature";
+    }
+    .sec_title2{
+        grid-area: sec_title2;
+        background-color: #f1f1f1;
+        color: black;
+        height: 120px;
+        width: 100%;
+        text-align:left;
+        align-items: center;
+        justify-items: center;
+    }
+    .box_nature{
+        /* background-color: brown; */
+        grid-area: box_nature;
+        height: 100%;
+        width: 100%;
+        gap:20px;
+        display: grid;
+        align-items: center;
+        justify-content: center;
+        justify-items: center;
+        grid-template-columns: 5fr 5fr;
+        grid-template-rows: 6fr 4fr;
+        grid-template-areas: 
+        "img2 img3"
+        "desc_img desc_img2"
+        ;
+    }
+    .img2{
+        grid-area: img2;
+        background-color: black;
+        background: url(imgs/imagens/ocean.jpg);
+        object-fit: cover;
+        height: 100%;
+        width: 100%;
+        background-repeat: no-repeat; 
+        background-size: 100% 100%;
+        background-position: center; 
+        position: relative;
+    }
+    .desc_img{
+        grid-area: desc_img;
+        background-color: white;
+        height: 100%;
+        width: 100%;
+        color: black;
+        margin-top: -38px;
+       
+    }
+    .img3{
+        grid-area: img3;
+        background-color: black;
+        background: url(imgs/imagens/mountains.jpg);
+        object-fit: cover;
+        height: 100%;
+        width: 100%;
+        background-repeat: no-repeat; 
+        background-size: 100% 100%;
+        background-position: center; 
+        position: relative;
+    }
+    .desc_img2{
+        grid-area: desc_img2;
+        background-color: white;
+        height: 100%;
+        width: 100%;
+        color: black;
+        margin-top: -38px;
+    }
+
+    .sec3{
+        grid-area: sec3;
+        background-color: #606060;
+        height: 65%;
+        width: 80%
+    }
+
+    .title_box{
+        background-color: #606060;
+        display: flex;
+        padding: 10px;
+        align-items: center;
+        height: 65px;
+        width: 100%;
+    }
+    .desc_box{
+        background-color: #606060;
+        display: flex;
+        padding: 10px;
+        align-items: center;
+        height: 50px;
+        width: 100%;
+    }  
+    .div_email{
+        background-color: #606060;
+        display: flex;
+        padding-left: 10px;
+        align-items: center;
+        height: 10px;
+        width: 100%;
+    }
+    .email_in{
+        background-color: #606060;
+        display: flex;
+        padding: 10px;
+        align-items: center;
+        width: 100%;
+    }
+    .input_email{
+        width: 100%;
+        height: 40px;
+    }
+    .div_btn{
+        background-color: #606060;
+        display: flex;
+        padding: 10px;
+        padding-top: 25px;
+        align-items: center;
+        height: 10px;
+        width: 100%;
+    }
+    .btn_subscribe{
+        background-color: #f38981;
+        color: white;
+        height: 35px;
+        width: 90px;
+        cursor: pointer;
+    }
+
+    .sec4{
+        grid-area: sec4;
+        background-color: #f1f1f1;
+        height: 100%;
+        width: 80%;
+        color: black;
+
+    }
+    .sec_title{
+        background-color: #f1f1f1;
+        height: 70px;
+    }
+    .sec_desc{
+        height: 50px;
+    }
+ 
+    .enderec{
+        width: 170px;
+        display: flex;
+        justify-content: space-between;
+        color: black;
+       
+    }
+    .tel{
+        width: 170px;
+        display: flex;
+        justify-content: space-between;
+        color: black;
+       
+    }
+    
+    .ender_mail{
+        width: 200px;
+        display: flex;
+        justify-content: space-between;
+        color: black;
+       
+    }
+    .send{
+        display: inline;
+        background-color: #606060;
+        gap: 10px;
+    }
+    .name{
+        height: 40px;
+        width: 100%;
+    }
+    .email{
+        height: 40px;
+        width: 100%;
+    }
+    .message{
+        height: 40px;
+        width: 100%;
+    }
+    .enviar{
+        margin-top: -10px;
+        height: 45px;
+        display: flex;
+        justify-items: center;
+    }
+    .send_message{
+        width: 170px;
+        background-color: black;
+        color: white;
+        cursor: pointer;
+    }
+
+    footer{
+        margin-top: -15px;
+        height: 180px;
+        background-color: #f1f1f1;
+        grid-area: footer;
+    }
+
+    .foot{
+        margin-top: 25px;
+        align-items: center;
+        justify-items: center;
+    }
+    .find_us{
+        background-color: #f1f1f1;
+        text-align: center;   
+        
+        height: 50px; 
+    }
+    .socials{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: #f1f1f1;
+        height: 50px;
+    }
+    .from_w3{
+        background-color: #f1f1f1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 50px;
+    }
