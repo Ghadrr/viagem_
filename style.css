@@ -28,7 +28,8 @@
         background-size: 100% 800px;
         background-position: center;
         position: relative;
-
+        align-items: center;
+        justify-content: center;
 
     }
     .bk{
@@ -108,6 +109,24 @@
         padding: 20px;
     }
 
+    @media (max-width: 768px){
+        .bk{
+            display: flex;
+            justify-content: space-around;
+            gap: 105px;
+        }
+        .box{
+            display: block;
+            align-items: center;
+            justify-items: center;
+            width: 500px;
+            margin-left: 110px;
+        }
+        .header{
+            align-items: center;
+        }
+    
+    }
 
     main{
         grid-area: main;
@@ -130,6 +149,8 @@
 
     }
 
+  
+
     .sec1{
         /* background-color: aqua; */
         grid-area: sec1;
@@ -141,6 +162,12 @@
         "sec_title"
         "box_img" 
         ;
+    }
+
+    @media(max-width: 768px){
+        .sec1{
+        width: 100%;        
+        }
     }
 
     .box_img{
@@ -174,9 +201,7 @@
         background-position: center;
         position: relative;
     }
-    .city_cinque{
-        margin-top: 79%;
-    }
+    
 
     .um{
         grid-area: um;
@@ -246,6 +271,13 @@
         "sec_title2"
         "box_nature";
     }
+
+    @media(max-width: 768px){
+        .sec2{
+        width: 100%;        
+        }
+    }
+
     .sec_title2{
         grid-area: sec_title2;
         background-color: #f1f1f1;
@@ -322,6 +354,12 @@
         width: 80%
     }
 
+    @media(max-width: 768px){
+        .sec3{
+        width: 100%;        
+        }
+    }
+
     .title_box{
         background-color: #606060;
         display: flex;
@@ -382,6 +420,12 @@
         color: black;
 
     }
+    @media(max-width: 768px){
+        .sec4{
+        width: 100%;        
+        }
+    }
+
     .sec_title{
         background-color: #f1f1f1;
         height: 70px;
